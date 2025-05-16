@@ -1,18 +1,29 @@
-import Image from "next/image";
+import Navbar from "@/components/base/Navbar";
+import HeroSection from "@/components/base/HeroSection";
+import Footer from "@/components/base/Footer"; 
+import FeatureSection from '@/components/base/FeatureSection';
+import UserReviews from "@/components/base/Userreviews";
+import { authOptions, CustomSession } from "./api/auth/[...nextauth]/options";
+import { getServerSession } from "next-auth";
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-4xl font-bold">Quick Chat</h1>
-      <p className="text-lg">A simple chat application using Next.js and OpenAI API</p>
-      <div className="flex gap-4">
-        <Image
-          src="/logo.png"
-          alt="Logo"
-          width={100}
-          height={100}
-        />
-      </div>
-    </main>
+export default async function LandingPage()
+{
+  const session: CustomSession | null = await getServerSession(authOptions);
+  return(
+    <div className="min-h-screen flex flex-col">
+      {/*header1*/}
+      <Navbar user={session?.user ?? null}/>
+      {/*hero section*/}
+      <HeroSection />
+
+      {/* Features Section */}
+      <FeatureSection />
+
+      {/* User Reviews Section */}
+      <UserReviews />
+
+      {/* Footer */}
+      <Footer />
+    </div>
   );
 }

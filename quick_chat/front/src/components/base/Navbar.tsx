@@ -1,4 +1,4 @@
-/*"use client";
+"use client";
 import React from "react";
 import Link from "next/link";
 import { CustomUser } from "@/app/api/auth/[...nextauth]/options";
@@ -21,4 +21,4 @@ export default function Navbar({ user }: { user: CustomUser | null }) {
       </div>
     </nav>
   );
-}*/
+}
