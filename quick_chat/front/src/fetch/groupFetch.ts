@@ -1,4 +1,4 @@
-import { CHAT_GROUP, CHAT_GROUP_USERS } from "@/lib/apiAuthRoutes";
+/*import { CHAT_GROUP, CHAT_GROUP_USERS } from "@/lib/apiAuthRoutes";
 
 export async function fetchChatGroups(token: string) {
   const res = await fetch(CHAT_GROUP, {
@@ -51,4 +51,4 @@ export async function fetchChatGroupUsers(id: string) {
     return response?.data;
   }
   return [];
-}
+}*/

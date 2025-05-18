@@ -1,4 +1,4 @@
-import { z } from "zod";
+/*import { z } from "zod";
 
 export const createChatSchema = z
   .object({
@@ -11,4 +11,4 @@ export const createChatSchema = z
   })
   .required();
 
-export type createChatSchemaType = z.infer<typeof createChatSchema>;
+export type createChatSchemaType = z.infer<typeof createChatSchema>;*/

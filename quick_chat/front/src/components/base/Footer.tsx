@@ -10,8 +10,8 @@ export default function Footer(){
                 <div>
                     <div>© 2024 QuickChat. All rights reserved.</div>
                     <div className="space-x-4 mt-2">
-                        <link href="/privacy-policy">Privacy Policy</link>/
-                        <link href="/terms-of-service">Terms of Service</link>
+                        {/* <link href="/privacy-policy">Privacy Policy</link>/ */}
+                        {/* <link href="/terms-of-service">Terms of Service</link> */}
                     </div>
                 </div>
                 <div className="space-y-4">

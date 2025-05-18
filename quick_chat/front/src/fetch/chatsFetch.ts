@@ -1,4 +1,4 @@
-import { CHATS_URL } from "@/lib/apiAuthRoutes";
+/*import { CHATS_URL } from "@/lib/apiAuthRoutes";
 
 export async function fetchChats(groupId: string) {
   const res = await fetch(`${CHATS_URL}/${groupId}`, {
@@ -14,4 +14,4 @@ export async function fetchChats(groupId: string) {
     return response?.data;
   }
   return [];
-}
+}*/
