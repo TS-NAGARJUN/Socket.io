@@ -3,6 +3,8 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 
 import { cn } from "@/lib/utils";
+import { Session } from "inspector/promises";
+import { SessionProvider } from "next-auth/react";
 
 const fontsans = FontSans({
   subsets: ["latin"],
@@ -21,7 +23,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
+      <SessionProvider>
+       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontsans.variable
@@ -29,6 +32,8 @@ export default function RootLayout({
       >
         {children}
       </body>
+      </SessionProvider>
+     
     </html>
   );
 }

@@ -1,10 +1,10 @@
 import Navbar from "@/components/base/Navbar";
-import HeroSection from "@/components/base/HeroSection";
-import Footer from "@/components/base/Footer"; 
-import FeatureSection from '@/components/base/FeatureSection';
-import UserReviews from "@/components/base/Userreviews";
+import HeroSectionClientWrapper from "@/components/base/HeroSectionClientWrapper"; 
 import { authOptions, CustomSession } from "./api/auth/[...nextauth]/options";
 import { getServerSession } from "next-auth";
+import FeatureSectionClientWrapper from "@/components/base/FeatureSectionClientWrapper";
+import UserReviewsClientWrapper from "@/components/base/UserReviewsClientWrapper";
+import FooterClientWrapper from "@/components/base/FooterClientWrapper";
 
 export default async function LandingPage()
 {
@@ -14,16 +14,16 @@ export default async function LandingPage()
       {/*header1*/}
       <Navbar user={session?.user ?? null}/>
       {/*hero section*/}
-      <HeroSection />
+      <HeroSectionClientWrapper />
 
       {/* Features Section */}
-      <FeatureSection />
+      <FeatureSectionClientWrapper />
 
       {/* User Reviews Section */}
-      <UserReviews />
+      <UserReviewsClientWrapper />
 
       {/* Footer */}
-      <Footer />
+      <FooterClientWrapper />
     </div>
   );
 }
