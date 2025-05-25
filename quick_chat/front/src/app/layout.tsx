@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
-
 import { cn } from "@/lib/utils";
-import { Session } from "inspector/promises";
-import { SessionProvider } from "next-auth/react";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/app/api/auth/[...nextauth]/options";
+import SessionProvider from "@/providers/SessionProvider"; // your custom client component
 
 const fontsans = FontSans({
   subsets: ["latin"],
@@ -16,24 +16,25 @@ export const metadata: Metadata = {
   description: "A best way to communicate to your closed ones",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const session = await getServerSession(authOptions);
+
   return (
     <html lang="en" suppressHydrationWarning>
-      <SessionProvider>
-       <body
+      <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontsans.variable
         )}
       >
-        {children}
+        <SessionProvider session={session}>
+          {children}
+        </SessionProvider>
       </body>
-      </SessionProvider>
-     
     </html>
   );
 }

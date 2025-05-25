@@ -1,6 +1,6 @@
 'use client'
 import react from 'react';
-import FeatureCardClientWrapper from './FeatureCardClientWrapper';
+import FeatureCardClientWrapper from './FeatureCard';
 
 export default function FeatureSection() {
     return(
