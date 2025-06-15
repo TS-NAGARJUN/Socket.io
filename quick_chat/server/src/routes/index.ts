@@ -3,8 +3,8 @@ const router = Router();
 import AuthController from "../controllers/AuthController.js";
 import ChatGroupController from "../controllers/ChatGroupController.js";
 import authMiddleware from "../middleware/AuthMiddleware.js";
-import ChatGroupUserController from "../controllers/ChatGroupController.js";
-import ChatsController from "../controllers/AuthController.js";
+import ChatGroupUserController from "../controllers/ChatGroupUserController.js";
+import ChatsController from "../controllers/ChatsController.js";
 
 // Auth Routes
 router.post("/auth/login", AuthController.login);
