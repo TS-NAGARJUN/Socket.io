@@ -16,3 +16,11 @@ Quick Chat is a full-stack messaging application featuring real-time communicati
 
 ## 📁 Project Structure
 
+quick_chat/
+├── front/ # Frontend (Next.js or React app)
+│ ├── public/ # Static assets served to the client
+│ │ ├── SCR1.png
+│ │ └── SCR2.png
+│ └── ... # Frontend source code
+├── server/ # Backend server (e.g., Node.js, Express)
+└── README.md # Project overview (this file)
