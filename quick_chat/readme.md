@@ -1,19 +1,21 @@
 
-## 🖼️ Images Display
+## 🖼️ Shared Images
 
-The two images are visible on the main page:
+These images are publicly accessible and used in the UI for reference or demonstration.
 
 ### Screenshot 1
 
-![Screenshot 1](/SCR1.png)
+![SCR1](/SCR1.png)
 
 ### Screenshot 2
 
-![Screenshot 2](/SCR2.png)
+![SCR2](/SCR2.png)
 
-## 🚀 Getting Started
+> ✅ Make sure both image files are located directly inside the `front/public/` folder.
 
-Install dependencies and start the development server:
+## 🚀 Running the Project
+
+In the `front/` directory:
 
 ```bash
 npm install
