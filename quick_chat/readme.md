@@ -6,13 +6,7 @@ Quick Chat is a full-stack messaging application featuring real-time communicati
 
 ## 🖼️ Screenshots
 
-These images are part of the frontend UI and are served from `front/public/`.
-
 ### 📸 SCR1
-
-![SCR1](front/public/SCR1.png)
-
-### 📸 SCR2
 
 ![SCR2](front/public/SCR2.png)
 
