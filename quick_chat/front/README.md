@@ -4,7 +4,9 @@
 
 QuickChat makes it effortless to create secure chat links and start conversations in seconds. Built with Next.js and Tailwind CSS for performance, security, and ease of use.
 
-## 🔥 Features
+---
+
+## 🚀 Features
 
 - ⚡ **Instant Setup** – Generate a room link in seconds. No account required.
 - 🔐 **Secure** – Passcode protection for private conversations.
@@ -16,17 +18,17 @@ QuickChat makes it effortless to create secure chat links and start conversation
 
 ### ✅ Home Page
 
-![QuickChat Home](/public/Screenshot%202025-06-16%20215052.png)
+![QuickChat Home](./public/Screenshot%202025-06-16%20215052.png)
 
 ### ✅ Dashboard
 
-![QuickChat Dashboard](/public/Screenshot%202025-06-16%20215104.png)
+![QuickChat Dashboard](./public/Screenshot%202025-06-16%20215104.png)
 
 ---
 
-## 🚀 Getting Started
+## 🛠 Getting Started
 
-To run the project locally:
+Install dependencies and start the development server:
 
 ```bash
 npm install
