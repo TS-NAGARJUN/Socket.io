@@ -1,22 +1,24 @@
+# Quick Chat 💬
 
-## 🖼️ Shared Images
+Quick Chat is a full-stack messaging application featuring real-time communication and basic media sharing.
 
-These images are publicly accessible and used in the UI for reference or demonstration.
+---
 
-### Screenshot 1
+## 🖼️ Screenshots
 
-![SCR1](/SCR1.png)
+These images are part of the frontend UI and are served from `front/public/`.
 
-### Screenshot 2
+### 📸 SCR1
 
-![SCR2](/SCR2.png)
+![SCR1](front/public/SCR1.png)
 
-> ✅ Make sure both image files are located directly inside the `front/public/` folder.
+### 📸 SCR2
 
-## 🚀 Running the Project
+![SCR2](front/public/SCR2.png)
 
-In the `front/` directory:
+> ⚠️ Make sure you start the frontend dev server (`npm run dev` in `front/`) to see the images at `http://localhost:3000/SCR1.png` and `http://localhost:3000/SCR2.png`.
 
-```bash
-npm install
-npm run dev
+---
+
+## 📁 Project Structure
+
